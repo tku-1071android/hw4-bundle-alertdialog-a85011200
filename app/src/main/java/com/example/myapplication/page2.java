@@ -59,9 +59,12 @@ public class page2 extends AppCompatActivity {
 
 
         AlertDialog.Builder bulider = new AlertDialog.Builder(this);
+        builder.setPositiveButton("OK",null);
+        builder.setNegativeButton("Cancel",null);
+        builder.setNeutralButton("Nothing",null);
         bulider.setMessage(message);
-        bulider.setMessage(title);
-        bulider.setMessage(pic);
+        bulider.setTitle(title);
+        bulider.setIcon(pic);
         bulider.show();
     }
 
